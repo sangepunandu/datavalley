@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departmental Store Customer Information</title>
+</head>
+<body>
+    <h1>Departmental Store Customer Information</h1>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Contact Phone No.:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="preferred_day">Preferred Day(s) of Purchasing (Select all that apply):</label><br>
+        <input type="checkbox" id="weekday" name="preferred_day[]" value="Weekday"> 
+        <label for="weekday">Weekday</label><br>
+        <input type="checkbox" id="weekend" name="preferred_day[]" value="Weekend"> 
+        <label for="weekend">Weekend</label><br><br>
+
+        <label for="favourite_item">Favourite Item:</label>
+        <select id="favourite_item" name="favourite_item" required>
+            <option value="">Select an Item</option>
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="home_goods">Home Goods</option>
+            <option value="groceries">Groceries</option>
+            </select><br><br>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
